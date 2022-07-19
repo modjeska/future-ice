@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>WeatherIce</title>
+    </head>
+
+    <body>
+        <div class="welcomeBar">
+            <div class="row">
+                <h1 class="welcomeText">Weather Hub</h1>
+            </div>
+            <div class="row searchBar">
+                <div class="searchArea">
+                    <div id="textArea" class="input-field col s6">
+                        <input value="Irvine" id="cityInput" type="text" class="validate">
+                        <label class="active" for="first_name2">Enter City</label>
+                      </div>
+                      <a id="cityButton" class="waves-effect waves-light btn alphaOne"><i class="material-icons right">cloud</i>probe</a>
+                </div>
+            </div>
+        </div>
+        <section class="mainContent">
+            <section class="leftContent">
+                <div class="leftTop">
+                    <h2>Recent Cities</h2>
+                </div>
+                <div id="recentCities">
+                </div>
+            </section>
+            <section class="rightContent">
+                <section>
+                    <div class="contentTitle">
+                        <img id="imgStatus" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherstatus">
+                        <h2 id="currentCity">Weather in</h2>
+                    </div>
+                    <div class="currentDay">
+                        <div class="currentBox">
+                            <p id="boxLabel">Temperature</p>
+                            <h1 class="boxInfo" id="currentTemp"></h1>
+                        </div>
+                        <div class="currentBox">
+                            <p id="boxLabel">Wind Speed</p>
+                            <h1 class="boxInfo" id="currentWind"></h1>
+                        </div>
+                        <div class="currentBox">
+                            <p id="boxLabel">Humidity</p>
+                            <h1 class="boxInfo" id="currentHumidity"></h1>
+                        </div>
+                        <div class="currentBox">
+                            <p id="boxLabel">UV Index</p>
+                            <h1 class="boxInfo" id="currentUv"></h1>
+                        </div>
+                    </div>
+                </section>
+                <section class="fiveDay">
+                    <div class="box">
+                        <img id="day1Img" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherstatus">
+                        <p id="day1"></p>
+                        <p id="day1Temp"></p>
+                        <p id="day1Wind"></p>
+                        <p id="day1Humidity"></p>
+                        <p id="day1Uv"></p>
+                    </div>
+                    <div class="box">
+                        <img id="day2Img" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherstatus">
+                        <p id="day2"></p>
+                        <p id="day2Temp"></p>
+                        <p id="day2Wind"></p>
+                        <p id="day2Humidity"></p>
+                        <p id="day2Uv"></p>
+                    </div>
+                    <div class="box">
+                        <img id="day3Img" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherstatus">
+                        <p id="day3"></p>
+                        <p id="day3Temp"></p>
+                        <p id="day3Wind"></p>
+                        <p id="day3Humidity"></p>
+                        <p id="day3Uv"></p>
+                    </div>
+                    <div class="box">
+                        <img id="day4Img" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherstatus">
+                        <p id="day4"></p>
+                        <p id="day4Temp"></p>
+                        <p id="day4Wind"></p>
+                        <p id="day4Humidity"></p>
+                        <p id="day4Uv"></p>
+                    </div>
+                    <div class="box">
+                        <img id="day5Img" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weatherstatus">
+                        <p id="day5"></p>
+                        <p id="day5Temp"></p>
+                        <p id="day5Wind"></p>
+                        <p id="day5Humidity"></p>
+                        <p id="day5Uv"></p>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <footer class="footer">
+            <h5>created by Dante Stargiotti</h5>
+        </footer>
+        <script src="./index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>        
+    </body>
+</html>
