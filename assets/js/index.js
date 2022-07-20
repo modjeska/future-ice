@@ -60,7 +60,7 @@ function cityGeo () {
     recentCities.push(cityInput)
     localStorage.setItem('recentCities', JSON.stringify(recentCities))
     console.log(cityInput)
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
     .then(function(response) {
         return response.json()
     })
@@ -73,12 +73,12 @@ function cityGeo () {
         })
         .then(function(data) {
             console.log(data)
-            let imgLink = `http://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`
-            let newImg1 = `http://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png`
-            let newImg2 = `http://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png`
-            let newImg3 = `http://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png`
-            let newImg4 = `http://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}@2x.png`
-            let newImg5 = `http://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}@2x.png`
+            let imgLink = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`
+            let newImg1 = `https://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png`
+            let newImg2 = `https://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png`
+            let newImg3 = `https://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png`
+            let newImg4 = `https://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}@2x.png`
+            let newImg5 = `https://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}@2x.png`
             imgOne.src = newImg1
             imgTwo.src = newImg2
             imgThree.src = newImg3
@@ -151,7 +151,7 @@ function cityGeo () {
 
 function savedRender () {
     console.log(cityInput)
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`)
     .then(function(response) {
         return response.json()
     })
@@ -164,12 +164,12 @@ function savedRender () {
         })
         .then(function(data) {
             console.log(data)
-            let imgLink = `http://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`
-            let newImg1 = `http://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png`
-            let newImg2 = `http://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png`
-            let newImg3 = `http://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png`
-            let newImg4 = `http://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}@2x.png`
-            let newImg5 = `http://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}@2x.png`
+            let imgLink = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`
+            let newImg1 = `https://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png`
+            let newImg2 = `https://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png`
+            let newImg3 = `https://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png`
+            let newImg4 = `https://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}@2x.png`
+            let newImg5 = `https://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}@2x.png`
             imgOne.src = newImg1
             imgTwo.src = newImg2
             imgThree.src = newImg3
